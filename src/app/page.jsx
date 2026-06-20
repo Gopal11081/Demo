@@ -13,6 +13,7 @@ export default function Home() {
     if (!storedUser) {
       router.push("/login");
     } else {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setUser(JSON.parse(storedUser));
       setIsLoading(false);
     }
